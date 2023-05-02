@@ -10,10 +10,12 @@
 
 // Define relay outputs for valve block
  
-int front_U = 4;
-int front_D = 5;
-int rear_U = 6;
-int rear_D = 7;
+int front_U = 4; // Front up relay
+int front_D = 5; // Front down relay
+int rear_U = 6; // Rear up relay
+int rear_D = 7; // Rear down relay
+
+// Using UTP CAT6 as interface cable between OEM buttons and Arduino
 
 const int buttonPin8 = 8;  // Inlet rear / ORANGE
 const int buttonPin9 = 9;  // Inlet front / BLUE
@@ -58,7 +60,7 @@ OneButton button12 = OneButton(
 
 void setup() {
 
-  Serial.begin(115200);                             // enable serial monitor
+  Serial.begin(115200);                             // enable serial monitor for debugging purposes
  
   pinMode(front_U, OUTPUT);                              // sets the digital pin as output
   pinMode(front_D, OUTPUT);                              // sets the digital pin as output
@@ -66,11 +68,11 @@ void setup() {
   pinMode(rear_D, OUTPUT);                              // sets the digital pin as output
 
   button12.attachDoubleClick(doubleclick);            // link the function to be called on a doubleclick event.
-  button9.attachDoubleClick(doubleclick2);            // link the function to be called on a doubleclick event.
-  button8.attachDuringLongPress(longpress8);            // link the function to be called on a doubleclick event.
-  button9.attachDuringLongPress(longpress9);            // link the function to be called on a doubleclick event.
-  button10.attachDuringLongPress(longpress10);            // link the function to be called on a doubleclick event.
-  button12.attachDuringLongPress(longpress12);            // link the function to be called on a doubleclick event.
+  button9.attachDoubleClick(doubleclick2);            // link the function to be called on a doubleclick2 event.
+  button8.attachDuringLongPress(longpress8);            // link the function to be called on a longpress8 event.
+  button9.attachDuringLongPress(longpress9);            // link the function to be called on a longpress9 event.
+  button10.attachDuringLongPress(longpress10);            // link the function to be called on a longpress10 event.
+  button12.attachDuringLongPress(longpress12);            // link the function to be called on a longpress12 event.
 } 
 
 void loop() {
