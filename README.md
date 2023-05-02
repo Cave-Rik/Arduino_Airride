@@ -6,12 +6,12 @@ Be sure to import the OneButton library into your Arduino app before compiling. 
 This airride setup can be expanded to a system with digital pressure sensors for more accurate inflation of the airride forks, as well as a screen to display the 
 current inflation of the forks.
 
-Used equipment:
-
-Arduino Uno (but sketch also works with Arduino Nano)
-Arduino relay board (4 relays) (in this case the 4 relay board from Robotdyn)
-Mini switch DIP P4 5mm (4x) (for mounting inside the VW OEM control button)
-VW OEM Window control button
-UTP wiring CAT6 (5M front to airride control box)
-
+Used equipment:<br>
+<br>
+Arduino Uno (but sketch also works with Arduino Nano)<br>
+Arduino relay board (in this case the 4 relay board from <b> Robotdyn)<br></b>
+Mini switch DIP P4 5mm (4x) (for mounting inside the VW OEM control button)<br>
+VW OEM Window control button<br>
+UTP wiring CAT6 (5M front to airride control box)<br>
+<br>
 All the other equipment (fusebox, compressors etc) was already present.
