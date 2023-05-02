@@ -3,10 +3,11 @@
  * 
  * Added long press feature
  * Added double press feature
+ * Coded by Rik Spijkers 20230502
  */
  
-#include "OneButton.h"                              
-#include "Arduino.h"
+#include "OneButton.h"  // Import OneButton library, can be found here : https://github.com/mathertel/OneButton.git                        
+#include "Arduino.h"    // Import Adruino library, already present in the tool
 
 // Define relay outputs for valve block
  
